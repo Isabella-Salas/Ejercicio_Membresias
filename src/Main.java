@@ -36,6 +36,7 @@ public class Main {
                             System.out.println("Ingrese el numero de meses activos: ");
                             int mesesActivo = sc.nextInt();
                             CuentaBasica cuentaBasica = new CuentaBasica(correoElectronico,mesesActivo);
+                            ps.agregarCuentaUsuario(cuentaBasica);
                             break;
                         case 2:
                             System.out.println("Ingrese el correo electronico: ");
@@ -43,6 +44,7 @@ public class Main {
                             System.out.println("Ingrese el numero de meses activos: ");
                             int mesesEstandar = sc.nextInt();
                             CuentaEstandar cuentaEstandar = new CuentaEstandar(correoEstandar,mesesEstandar);
+                            ps.agregarCuentaUsuario(cuentaEstandar);
                             break;
                         case 3:
                             System.out.println("Ingrese el correo electronico: ");
@@ -50,6 +52,7 @@ public class Main {
                             System.out.println("Ingrese el numero de meses activos: ");
                             int mesesPremium = sc.nextInt();
                             CuentaPremium cuentaPremium = new CuentaPremium(correoPremium,mesesPremium);
+                            ps.agregarCuentaUsuario(cuentaPremium);
                             break;
                     }
                     break;
