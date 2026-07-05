@@ -30,8 +30,18 @@ public class Main {
                             CuentaBasica cuentaBasica = new CuentaBasica(correoElectronico,mesesActivo);
                             break;
                         case 2:
+                            System.out.println("Ingrese el correo electronico: ");
+                            String correoEstandar = sc.next();
+                            System.out.println("Ingrese el numero de meses activos: ");
+                            int mesesEstandar = sc.nextInt();
+                            CuentaEstandar cuentaEstandar = new CuentaEstandar(correoEstandar,mesesEstandar);
                             break;
                         case 3:
+                            System.out.println("Ingrese el correo electronico: ");
+                            String correoPremium = sc.next();
+                            System.out.println("Ingrese el numero de meses activos: ");
+                            int mesesPremium = sc.nextInt();
+                            CuentaPremium cuentaPremium = new CuentaPremium(correoPremium,mesesPremium);
                             break;
                     }
                     break;
