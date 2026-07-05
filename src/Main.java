@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        PlanBasico planB = new PlanBasico();
+        PlataformaStreaming ps = new PlataformaStreaming();
+        CuentaUsuario usuario0 = new CuentaBasica("usuario0@prueba.com", 6);
+        ps.agregarCuentaUsuario(usuario0);
+        CuentaUsuario usuario01 = new CuentaEstandar("usuario01@prueba.com", 12);
+        ps.agregarCuentaUsuario(usuario01);
+        CuentaUsuario usuario02 = new CuentaPremium("usuario02@prueba.com", 3);
+        ps.agregarCuentaUsuario(usuario02);
 
         Scanner sc = new Scanner(System.in);
         int opcion;
@@ -10,7 +18,7 @@ public class Main {
         do{
             System.out.println("Seleccione la accion que desea realizar: ");
             System.out.println("1.Cuenta usuario");
-            System.out.println("2.---");
+            System.out.println("2.Mostrar lista de cuentas y dinero recaudado");
             System.out.println("3.Salir");
             opcion = sc.nextInt();
             switch (opcion){
@@ -46,8 +54,11 @@ public class Main {
                     }
                     break;
                 case 2:
+                    System.out.println(ps.mostrarListaCuentaUsuario());
+                    System.out.println(ps.mostrarTotalRecaudado());
                     break;
                 case 3:
+                    System.exit(0);
                     break;
             }
             System.out.println("¿Desea continuat?");
