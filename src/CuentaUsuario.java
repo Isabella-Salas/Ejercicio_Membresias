@@ -39,12 +39,5 @@ public abstract class CuentaUsuario {
         this.plan = plan;
     }
 
-    @Override
-    public String toString() {
-        return "CuentaUsuario{" +
-                "correoElectronico='" + correoElectronico + '\'' +
-                ", mesesActivo=" + mesesActivo +
-                ", plan=" + plan +
-                '}';
-    }
+
 }
