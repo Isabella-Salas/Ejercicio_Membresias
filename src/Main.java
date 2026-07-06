@@ -70,5 +70,7 @@ public class Main {
             op = sc.nextInt();
         }while (op == 1);
 
+        System.out.println("Aqui termine el menu");
+
     }
 }
